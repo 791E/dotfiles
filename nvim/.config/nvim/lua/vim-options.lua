@@ -15,7 +15,13 @@ vim.api.nvim_set_keymap("n", "<C-s>", ":split<CR>", { noremap = true, silent = t
 vim.api.nvim_set_keymap("n", "<C-v>", ":vsplit<CR>", { noremap = true, silent = true} )
 
 -- Close window
-vim.api.nvim_set_keymap("n", "<C-q>", ":q<CR>+", { noremap = true, silent = true } )
+vim.api.nvim_set_keymap("n", "<C-q>", ":q<CR>", { noremap = true, silent = true } )
+
+-- Write file
+vim.api.nvim_set_keymap("n", "<C-w>", ":w<CR>", { noremap = true, silent = true } )
 
 -- Visual Block
 vim.api.nvim_set_keymap("n", "<leader>v", "<C-v>", { noremap = true, silent = true} )
+
+-- Enable line numbers
+vim.cmd("set number")
