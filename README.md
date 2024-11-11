@@ -40,3 +40,8 @@ I recommend using git to clone the repo, so you can also update it to get any ne
 
 ### yazi
 - yazi
+
+## Known issues
+
+### KDE Dolphin doesn't recognize MIME associations
+When I installed KDE's file manager Dolphin, it never recognized the MIME file type associations. I googled it and found a discussion on it over on the [arch forums](https://bbs.archlinux.org/viewtopic.php?id=295236), but that didn't help for me. The only thing that helped, was a comment by Trvzn after the thread was already marked as solved, linking a reddit discussion from over on [r/KDE](https://www.reddit.com/r/kde/), where [u/Red-Eye-Soul](https://www.reddit.com/user/Red-Eye-Soul/) had the same issue. The solution proposed by [u/Puzzleheaded_Leg369](https://www.reddit.com/user/Puzzleheaded_Leg369/) on this [discussion](https://www.reddit.com/r/kde/comments/1bd313p/comment/l1jinyf/) worked for me, so try that if you have the same issue, or create an issue / PR if you happen to know about a better solution.
