@@ -3,7 +3,7 @@ return {
 	opts = {
 		options = {
 			icons_enabled = true,
-			theme = 'onenord',
+			theme = 'dracula',
 			section_separators = {'', ''},
 			component_separators = {'', ''},
 			disabled_filetypes = {}
