@@ -14,7 +14,6 @@ cd dotfiles
 stow nvim
 ```
 ## Dependencies
-I recommend using git to clone the repo, so you can also update it to get any new changes.
 
 ### hypr
 - wayland
@@ -34,12 +33,17 @@ I recommend using git to clone the repo, so you can also update it to get any ne
 ### nvim
 - nvim
 - npm (to install pyright [LSP server for python], doesn't need to be installed if you don't care about python, but then I'd recommend removing everything that contains "pyright" from dotfiles/nvim/.config/nvim/lua/plugins/lsp-config.lua)
+- git (lazy.nvim and mason.nvim use git to install plugins / LSP servers)
 
 ### sddm
 - sddm
 
 ### yazi
 - yazi
+
+### zsh
+- zsh
+- git (to install antigen plugins)
 
 ## Known issues
 
