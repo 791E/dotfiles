@@ -1,7 +1,7 @@
 return {
 	"rmehri01/onenord.nvim",
 	name = "onenord",
-	priority = 1000,
+	enabled = false,
 	opts = {
 		borders = true,
 		fade_nc = false,
