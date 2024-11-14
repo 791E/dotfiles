@@ -33,10 +33,11 @@ vim.cmd("set number")
 vim.cmd("set relativenumber")
 
 -- Toggle neo-tree filesystem
-vim.keymap.set("n", "<leader>n", ":Neotree filesystem left toggle<CR>")
+vim.keymap.set("n", "<leader>n", ":Neotree toggle<CR>")
 
 -- Keybindings for LSP related stuff
 vim.keymap.set('n', '<leader>h', vim.lsp.buf.hover, { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>d', vim.lsp.buf.definition, { noremap = true, silent = true })
 vim.keymap.set({'n', 'v'}, '<leader>ca', vim.lsp.buf.code_action, { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>ff', vim.lsp.buf.format, { noremap = true, silent = true })
 
