@@ -8,10 +8,10 @@ return {
             return
         end
         configs.setup({
-			auto_install = true,
+            auto_install = true,
             highlight = { enable = true },
             indent = { enable = true },
-            autoinstall = true
+            autoinstall = true,
         })
-    end
+    end,
 }
