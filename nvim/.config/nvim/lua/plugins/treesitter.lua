@@ -8,7 +8,7 @@ return {
             return
         end
         configs.setup({
-            ensure_installed = {"lua", "c", "python"},
+			auto_install = true,
             highlight = { enable = true },
             indent = { enable = true },
             autoinstall = true
