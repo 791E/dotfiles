@@ -44,6 +44,7 @@ stow nvim
 ### zsh
 - zsh
 - git (to install antigen plugins)
+- fzf (fuzzy finder for command history, two aliases depend on fzf)
 
 ## Known issues
 
