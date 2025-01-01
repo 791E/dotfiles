@@ -5,6 +5,8 @@ vim.cmd("set softtabstop=4")
 vim.cmd("set expandtab")
 vim.g.mapleader = " "
 
+vim.cmd("set clipboard+=unnamedplus")
+
 -- Window navigation
 vim.api.nvim_set_keymap("n", "<C-h>", "<C-w>h", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-j>", "<C-w>j", { noremap = true, silent = true })
