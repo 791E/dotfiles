@@ -51,8 +51,7 @@ autoload -Uz compinit
 compinit
 
 # Enable fuzzy auto-completion
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
+source <(fzf --zsh)
 
 # Use CTRL + H to view command history completion
 bindkey -r '^R'
