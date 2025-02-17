@@ -40,6 +40,7 @@ export PATH=$PATH:$HOME/.spicetify
 # z - jump around #
 ###################
 
+export _Z_DATA="$HOME/.z_data"
 . $HOME/.z/z.sh
 
 ###############
