@@ -34,6 +34,7 @@ stow nvim
 - nvim
 - npm (to install pyright [LSP server for python], doesn't need to be installed if you don't care about python, but then I'd recommend removing everything that contains "pyright" from dotfiles/nvim/.config/nvim/lua/plugins/lsp-config.lua)
 - git (lazy.nvim and mason.nvim use git to install plugins / LSP servers)
+- ripgrep (for telescope.nvim.builtin.live_grep)
 
 ### sddm
 - sddm
