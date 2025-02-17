@@ -51,3 +51,28 @@ stow nvim
 
 ### KDE Dolphin doesn't recognize MIME associations
 When I installed KDE's file manager Dolphin, it never recognized the MIME file type associations. I googled it and found a discussion on it over on the [arch forums](https://bbs.archlinux.org/viewtopic.php?id=295236), but that didn't help for me. The only thing that helped, was a comment by Trvzn after the thread was already marked as solved, linking a reddit discussion from over on [r/KDE](https://www.reddit.com/r/kde/), where [u/Red-Eye-Soul](https://www.reddit.com/user/Red-Eye-Soul/) had the same issue. The solution proposed by [u/Puzzleheaded_Leg369](https://www.reddit.com/user/Puzzleheaded_Leg369/) on this [discussion](https://www.reddit.com/r/kde/comments/1bd313p/comment/l1jinyf/) worked for me, so try that if you have the same issue, or create an issue / PR if you happen to know about a better solution.
+
+Here's a copy of [u/Puzzleheaded_Leg369](https://www.reddit.com/user/Puzzleheaded_Leg369/)'s comment, in case it ever get's deleted:
+
+"I did follow these steps and I struggled in getting the 'applications.menu' file, so I would like to share how I did solve the issue from this checkpoint.
+First try running this command
+
+kbuildsycoca6 --noincremental
+If it does print this output -> "applications.menu" not found in QList("~/.config/menus", "/etc/xdg/menus"), you will need to get this file.
+To get the applications.menu file, install this package
+
+sudo pacman -Sy archlinux-xdg-menu
+Then run this command to generate the file
+
+sudo update-desktop-database
+As the file name differs you need to change the file name
+
+cd /etc/xdg/menus
+
+ls
+expected output -> "arch-applications.menu"
+
+sudo mv arch-applications.menu applications.menu
+Then run again this command and it should work fine
+
+kbuildsycoca6 --noincremental"
