@@ -5,7 +5,7 @@ return {
     },
     {
         "williamboman/mason-lspconfig.nvim",
-        opts = { ensure_installed = { "lua_ls", "clangd", "pyright", "bashls" } },
+        opts = { ensure_installed = { "lua_ls", "clangd", "pyright", "bashls", "rust_analyzer" } },
     },
     {
         "neovim/nvim-lspconfig",
@@ -34,6 +34,7 @@ return {
             lspconfig.clangd.setup({ capabilities = capabilities })
             lspconfig.pyright.setup({ capabilities = capabilities })
             lspconfig.bashls.setup({ capabilities = capabilities })
+            lspconfig.rust_analyzer.setup({ capabilities = capabilities })
         end,
     },
     {
@@ -43,6 +44,7 @@ return {
             null_ls.setup({
                 sources = {
                     null_ls.builtins.formatting.stylua,
+                    null_ls.builtins.formatting.rustfmt,
                 },
             })
         end,
