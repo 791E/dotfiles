@@ -26,7 +26,7 @@ rsegment_start
 
 CURRENT_BG='NONE'
 if [[ -z "$PRIMARY_FG" ]]; then
-	PRIMARY_FG="#2e3440"
+	PRIMARY_FG=black
 fi
 
 # Characters
@@ -57,19 +57,19 @@ segment_status() {
 	local symbols
 	RETVAL=$?
 	symbols=()
-	[[ $RETVAL -ne 0 ]] && symbols+="%{%F{#bf616a}%}$(print $CROSS)"
-	[[ $UID -eq 0 ]] && symbols+="%{%F{#ebcb8b}%}$(print $LIGHTNING)"
-	[[ $(jobs -l | wc -l) -gt 0 ]] && symbols+="%{%F{#88c0d0}%}$(print $GEAR)"
+	[[ $RETVAL -ne 0 ]] && symbols+="%{%F{red}%}$(print $CROSS)"
+	[[ $UID -eq 0 ]] && symbols+="%{%F{yellow}%}$(print $LIGHTNING)"
+	[[ $(jobs -l | wc -l) -gt 0 ]] && symbols+="%{%F{cyan}%}$(print $GEAR)"
 
 	[[ -n "$symbols" ]] && prompt_segment $PRIMARY_FG default " $symbols "
 }
 
 segment_context() {
-	prompt_segment "#5e81ac" $PRIMARY_FG " %n@%m "
+	prompt_segment "blue" $PRIMARY_FG " %n@%m "
 }
 
 segment_dir() {
-	prompt_segment "#d08770" $PRIMARY_FG " %3~ "
+	prompt_segment "cyan" $PRIMARY_FG " %3~ "
 }
 
 segment_git() {
@@ -80,10 +80,10 @@ segment_git() {
 	ref="$vcs_info_msg_0_"
 	if [[ -n "$ref" ]]; then
 		if is_dirty; then
-			color="#ebcb8b"
+			color="yellow"
 			ref="${ref} $(print $PLUSMINUS)"
 		else
-			color="#a3be8c"
+			color="green"
 			ref="${ref} "
 		fi
 		if [[ "${ref/.../}" == "$ref" ]]; then
@@ -98,7 +98,7 @@ segment_git() {
 
 segment_virtualenv() {
 	if [[ -n $VIRTUAL_ENV ]]; then
-		prompt_segment "#88c0d0" $PRIMARY_FG
+		prompt_segment "yellow" $PRIMARY_FG
 		PROMPT+=" $(basename $VIRTUAL_ENV) "
 	fi
 }
@@ -128,7 +128,7 @@ rprompt_segment() {
 
 
 rsegment_time() {
-	rprompt_segment "#5e81ac" $PRIMARY_FG "%t "
+	rprompt_segment "blue" $PRIMARY_FG "%t "
 }
 
 rsegment_start() {
