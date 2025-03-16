@@ -77,3 +77,6 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 # Apply antigen changes
 antigen apply
 
+if command -v nerdfetch &> /dev/null; then
+    nerdfetch && echo "\n"
+fi
