@@ -65,7 +65,7 @@ segment_status() {
 }
 
 segment_context() {
-	prompt_segment "blue" $PRIMARY_FG " %n@%m "
+	prompt_segment "magenta" $PRIMARY_FG " %n@%m "
 }
 
 segment_dir() {
@@ -98,7 +98,7 @@ segment_git() {
 
 segment_virtualenv() {
 	if [[ -n $VIRTUAL_ENV ]]; then
-		prompt_segment "yellow" $PRIMARY_FG
+		prompt_segment "blue" $PRIMARY_FG
 		PROMPT+=" $(basename $VIRTUAL_ENV) "
 	fi
 }
