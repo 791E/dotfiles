@@ -4,7 +4,7 @@
 
 alias lsa='lsd -AF1'
 alias ls='ls --color=auto'
-alias lst='lsd -AF --tree --ignore-glob .git'
+alias lst='lsd -AF --tree --ignore-glob .git --ignore-glob target'
 alias grep='grep --color=auto'
 alias svim='sudo -E nvim'
 alias cfzf='cd $(dirname $(ff))'
