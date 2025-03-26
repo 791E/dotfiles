@@ -36,13 +36,6 @@ source $HOME/.zsh/prompt.zsh
 
 export PATH=$PATH:$HOME/.spicetify
 
-###################
-# z - jump around #
-###################
-
-export _Z_DATA="$HOME/.z_data"
-. $HOME/.z/z.sh
-
 ###############
 # Completions #
 ###############
@@ -80,6 +73,12 @@ antigen apply
 if command -v nerdfetch &> /dev/null; then
     nerdfetch && echo "\n"
 fi
+
+##########
+# zoxide #
+##########
+
+eval "$(zoxide init zsh)"
 
 #######
 # bun #
