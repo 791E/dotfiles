@@ -80,3 +80,13 @@ antigen apply
 if command -v nerdfetch &> /dev/null; then
     nerdfetch && echo "\n"
 fi
+
+#######
+# bun #
+#######
+
+# completions
+[ -s "/home/Gian/.bun/_bun" ] && source "/home/Gian/.bun/_bun"
+
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
