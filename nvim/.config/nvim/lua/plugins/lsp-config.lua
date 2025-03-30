@@ -35,6 +35,7 @@ return {
             lspconfig.pyright.setup({ capabilities = capabilities })
             lspconfig.bashls.setup({ capabilities = capabilities })
             lspconfig.rust_analyzer.setup({ capabilities = capabilities })
+            lspconfig.ruff.setup( { capabilities = capabilities } )
         end,
     },
     {
@@ -44,7 +45,6 @@ return {
             null_ls.setup({
                 sources = {
                     null_ls.builtins.formatting.stylua,
-                    null_ls.builtins.formatting.rustfmt,
                 },
             })
         end,
