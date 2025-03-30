@@ -22,13 +22,13 @@ export EDITOR="/usr/bin/nvim"
 # Aliases #
 ###########
 
-source $HOME/.zsh/aliases.zsh
+source $HOME/.config/zsh/aliases.zsh
 
 ##########
 # Prompt #
 ##########
 
-source $HOME/.zsh/prompt.zsh
+source $HOME/.config/zsh/prompt.zsh
 
 #############
 # Spicetify #
@@ -60,7 +60,7 @@ zstyle ':completion:*' menu select
 ###########
 
 # Enable antigen
-source $HOME/antigen.zsh
+source $HOME/.config/zsh/antigen.zsh
 
 # antigen plugins
 antigen bundle zsh-users/zsh-autosuggestions
