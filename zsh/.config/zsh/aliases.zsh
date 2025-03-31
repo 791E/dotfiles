@@ -11,5 +11,9 @@ alias cfzf='cd $(dirname $(ff))'
 alias nfzf='nvim $(ff)'
 alias ff='fzf --preview "bat --color=always --style=numbers {}"'
 alias lg='lazygit'
-alias bzf='fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"'
 
+# compress pdf files with ghostscript
+pdf_compress ()
+{
+    [[ -n $* ]] && gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE -dQUIET -dBATCH -sOutputFile=$1 $1 || echo "File path must be specified"
+}
