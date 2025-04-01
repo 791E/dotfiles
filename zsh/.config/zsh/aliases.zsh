@@ -15,5 +15,5 @@ alias lg='lazygit'
 # compress pdf files with ghostscript
 pdf_compress ()
 {
-    [[ "$#" -eq 2 ]] && gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE -dQUIET -dBATCH -sOutputFile=$1 $2 || echo "Exactly two file paths must be specified: `pdf_compress </path/to/input_file.pdf> </path/to/output_file.pdf>`"
+    [[ "$#" -eq 2 ]] && gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE -dQUIET -dBATCH -sOutputFile=$2 $1 || echo "Exactly two file paths must be specified: `pdf_compress </path/to/input_file.pdf> </path/to/output_file.pdf>`"
 }
