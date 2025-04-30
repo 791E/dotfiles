@@ -14,4 +14,14 @@ return {
         "eraserhd/parinfer-rust",
         build = "cargo build --release",
     },
+    -- preview and syntax for typst
+    {
+        "chomosuke/typst-preview.nvim",
+        lazy = false,
+        opts = {
+            dependencies_bin = {
+                ["tynimist"] = "tynimist",
+            },
+        },
+    },
 }
