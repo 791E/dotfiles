@@ -47,6 +47,10 @@ stow nvim
 - git (to install antigen plugins)
 - fzf (fuzzy finder for command history, two aliases depend on fzf)
 
+### zathura
+- zathura
+- zathura-pdf-poppler
+
 ## Known issues
 
 ### KDE Dolphin doesn't recognize MIME associations
