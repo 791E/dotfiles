@@ -5,7 +5,7 @@ return {
     },
     {
         "williamboman/mason-lspconfig.nvim",
-        opts = { ensure_installed = { "lua_ls", "clangd", "pyright", "bashls", "rust_analyzer", "tynimist" } },
+        opts = { ensure_installed = { "lua_ls", "clangd", "pyright", "bashls", "rust_analyzer", "tinymist" } },
     },
     {
         "neovim/nvim-lspconfig",
