@@ -24,4 +24,9 @@ return {
             },
         },
     },
+    -- undotree
+    {
+        "mbbill/undotree",
+        config = function() end,
+    },
 }
