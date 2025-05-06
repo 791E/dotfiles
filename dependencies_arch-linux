@@ -1,0 +1,32 @@
+#########################################
+# Required packages for 791E's dotfiles #
+#                                       #
+# Package names for: Arch Linux         #
+#########################################
+
+# hypr*
+wayland
+hyprland
+hyprpaper
+hypridle
+ghostty
+dolphin
+rofi
+pipewire
+
+# GTK theme
+gtk-engine-murrine
+sassc
+
+# neovim
+neovim
+npm
+ripgrep
+
+# zsh
+zsh
+fzf
+
+# zathura
+zathura
+zathura-pdf-poppler
