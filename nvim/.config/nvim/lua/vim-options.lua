@@ -21,7 +21,7 @@ vim.api.nvim_set_keymap("n", "<leader>v", ":vsplit<CR>", { noremap = true, silen
 vim.api.nvim_set_keymap("n", "<leader>q", ":q<CR>", { noremap = true, silent = true })
 
 -- Force close window
-vim.api.nvim_set_keymap("n", "<leader><C-q>", ":q!<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-q>", ":q!<CR>", { noremap = true, silent = true })
 
 -- Write file
 vim.api.nvim_set_keymap("n", "<leader>w", ":w<CR>", { noremap = true, silent = true })
