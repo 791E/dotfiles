@@ -2,7 +2,8 @@
 # Zsh Aliases #
 ###############
 
-alias lsa='lsd -AF1'
+alias la='lsd -AF1'
+alias lsa='lsd -lA'
 alias ls='ls --color=auto'
 alias lst='lsd -AF --tree --ignore-glob .git --ignore-glob target'
 alias grep='grep --color=auto'
@@ -10,7 +11,7 @@ alias svim='sudo -E nvim'
 alias nff='nvim $(ff)'
 alias ff='fzf --preview "bat --color=always --style=numbers {}"'
 alias lg='lazygit'
-alias cla='clear && lsa'
+alias cla='clear && la'
 
 # compress pdf files with ghostscript
 pdf_compress ()
