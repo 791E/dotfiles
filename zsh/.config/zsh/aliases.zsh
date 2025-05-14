@@ -3,7 +3,7 @@
 ###############
 
 alias la='lsd -AF1'
-alias lsa='lsd -lA'
+alias lsa='lsd -lAF'
 alias ls='ls --color=auto'
 alias lst='lsd -AF --tree --ignore-glob .git --ignore-glob target'
 alias grep='grep --color=auto'
