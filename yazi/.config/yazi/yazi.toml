@@ -1,2 +1,7 @@
 [manager]
 show_hidden = true
+
+[open]
+prepend_rules = [
+    { name = "*.xopp", use = "xournalpp" }
+]
