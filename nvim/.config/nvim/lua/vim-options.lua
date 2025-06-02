@@ -43,6 +43,7 @@ vim.keymap.set("n", "<leader>h", vim.lsp.buf.hover, { noremap = true, silent = t
 vim.keymap.set("n", "<leader>d", vim.lsp.buf.definition, { noremap = true, silent = true })
 vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>ff", vim.lsp.buf.format, { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, { noremap = true, silent = true })
 
 -- Toggle undotree
 vim.keymap.set("n", "<leader>u", ":UndotreeToggle<CR>")
