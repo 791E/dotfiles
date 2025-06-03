@@ -8,10 +8,16 @@ alias ls='ls --color=auto'
 alias lst='lsd -AF --tree --ignore-glob .git --ignore-glob target'
 alias grep='grep --color=auto'
 alias svim='sudo -E nvim'
-alias nff='nvim $(ff)'
 alias ff='fzf --preview "bat --color=always --style=numbers {}"'
 alias lg='lazygit'
 alias cla='clear && la'
+
+# Select a file with ff and open it in neovim
+nff()
+{
+    local file=$(ff --prompt "Open with neovim: ")
+    [ -n "$file" ] && nvim "$file" || return
+}
 
 # compress pdf files with ghostscript
 pdf_compress ()
