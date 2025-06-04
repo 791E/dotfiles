@@ -8,7 +8,7 @@ I'm trying to add all of my dotfiles to this repo, but this will probably take a
 clone the repo and move the folders to the correct location, or use `stow` to automatically create symlinks.
 
 Example: Installing the neovim config
-```
+```sh
 git clone https://github.com/791E/dotfiles
 cd dotfiles
 stow nvim
