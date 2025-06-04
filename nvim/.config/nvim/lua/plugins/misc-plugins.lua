@@ -29,4 +29,9 @@ return {
         "mbbill/undotree",
         config = function() end,
     },
+    {
+        "folke/trouble.nvim",
+        opts = {},
+        cmd = "Trouble",
+    },
 }
