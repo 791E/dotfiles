@@ -12,12 +12,6 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-#########################
-# Environment Variables #
-#########################
-
-export EDITOR="/usr/bin/nvim"
-
 ###########
 # Aliases #
 ###########
