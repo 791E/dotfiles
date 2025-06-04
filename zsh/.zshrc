@@ -83,3 +83,9 @@ eval "$(zoxide init zsh)"
 
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+##################################
+# Rust esp environment variables #
+##################################
+[[ -f $HOME/export-esp.sh ]] && . $HOME/export-esp.sh
+
