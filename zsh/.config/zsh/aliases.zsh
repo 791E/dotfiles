@@ -10,6 +10,7 @@ alias grep='grep --color=auto'
 alias svim='sudo -E nvim'
 alias ff='fzf --preview "bat --color=always --style=numbers {}"'
 alias lg='lazygit'
+alias cl='clear && lsd'
 alias cla='clear && la'
 
 # Select a file with ff and open it in neovim
