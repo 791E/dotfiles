@@ -39,8 +39,8 @@ vim.cmd("set relativenumber")
 vim.keymap.set("n", "<leader>n", ":Neotree toggle<CR>")
 
 -- trouble.nvim
-vim.keymap.set("n", "<leader>td", ":Trouble diagnostics toggle<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>ts", ":Trouble symbols toggle focus=false<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>td", ":Trouble diagnostics toggle win.position=right<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>ts", ":Trouble symbols toggle focus=false win.position=left<CR>", { noremap = true, silent = true })
 
 -- Keybindings for LSP related stuff
 vim.keymap.set("n", "<leader>h", vim.lsp.buf.hover, { noremap = true, silent = true })
