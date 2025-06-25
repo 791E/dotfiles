@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Check if rclone is installed, exit silently if not
 command -v rclone &> /dev/null || exit 0
