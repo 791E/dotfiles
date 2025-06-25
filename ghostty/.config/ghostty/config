@@ -1,6 +1,4 @@
 theme = tokyonight
-background = 000000
-background-opacity = 0.7
 resize-overlay = never
 font-size = 11
 
